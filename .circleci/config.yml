@@ -16,10 +16,10 @@ jobs:
             terraform workspace select ${CIRCLE_BRANCH}
             terraform plan -out=plan/${CIRCLE_BRANCH}.out
       - persist_to_workspace:
-        root: ./
-        paths:
-          - plan/
-          - .terraform
+          root: ./
+          paths:
+            - plan/
+            - .terraform
 
   apply-manual:
     docker:
