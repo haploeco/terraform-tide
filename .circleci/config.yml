@@ -2,7 +2,7 @@ version: 2
 jobs:
   plan:
     docker:
-      - image: nicholasjackson/hashicorp-ci:latest
+      - image: haplolabs/terraform-ci:latest
     steps:
       - checkout
       - run:
@@ -23,7 +23,7 @@ jobs:
 
   apply-manual:
     docker:
-      - image: nicholasjackson/hashicorp-ci:latest
+      - image: haplolabs/terraform-ci:latest
     steps:
       - checkout
       - attach_workspace:
