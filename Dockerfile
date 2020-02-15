@@ -10,5 +10,4 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update && \
     rm vault_1.3.1_linux_amd64.zip && \
     rm terraform_0.11.14_linux_amd64.zip && \
     mv ./terraform /bin && \
-    mv ./envconsul /bin && \
     mv ./vault /bin
